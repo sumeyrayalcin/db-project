@@ -51,14 +51,14 @@ from EMPLOYEES;
 --VIEW
 --it will be viewed right database view folder
 --initials, full_name, full_email
-CREATE VIEW Emaillist_suheda as select substr(FIRST_NAME,0,1)||'.'||substr(LAST_NAME,0,1) as initials,
+CREATE VIEW Emaillist_sumeyra as select substr(FIRST_NAME,0,1)||'.'||substr(LAST_NAME,0,1) as initials,
                                        FIRST_NAME || ' '|| LAST_NAME as full_name,
                                        lower(EMAIL||'@gmail.com') as full_email
                                 from EMPLOYEES;
 
 
 --to remove view
---  drop view EMAILLISTSUHEDA;
+--  drop view EMAILLISTSUMEYRA;
 
 
 
