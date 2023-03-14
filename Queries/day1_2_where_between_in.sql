@@ -50,6 +50,6 @@ where EMPLOYEE_ID in(105,106,154,129);
 
 
 --get me city of where country_id IT,US,UK
-select CITY
+select CITY,COUNTRY_ID
 from LOCATIONS
 where COUNTRY_ID in('IT','US','UK');
