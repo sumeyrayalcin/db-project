@@ -16,9 +16,9 @@ from EMPLOYEES e left join DEPARTMENTS d
 on e.DEPARTMENT_ID = d.DEPARTMENT_ID;
 
 
--- doesnt work well, I will check it later
+-- doesnt work well, I will check it later there is no left but there is right
 select CUSTOMER_ID,FIRST_NAME,LAST_NAME,CUSTOMER.ADDRESS_ID,ADDRESS.ADDRESS_ID ADDRESS,PHONE
-from CUSTOMER left outer join ADDRESS
+from CUSTOMER right outer join  ADDRESS
                               on CUSTOMER.ADDRESS_ID = ADDRESS.ADDRESS_ID
 where CUSTOMER.ADDRESS_ID IS NULL;
 
