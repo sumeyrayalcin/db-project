@@ -37,9 +37,9 @@ select * from address;
 -- if you have value matching in both sides, you gonna display that matching result it is called: inner join
 --join(table)  on(condition)
 -- you can write join, it means inner join (default)
-select first_name,last_name,address,phone
+select first_name, last_name, address, phone
 from customer join address
-                   on customer.address_id = address.address_id;
+    on customer.address_id = address.address_id;
 
 --if you add column which is inside both table, you should specify like customer.address_id or address.address_id
 select first_name,last_name,customer.address_id,address,phone
