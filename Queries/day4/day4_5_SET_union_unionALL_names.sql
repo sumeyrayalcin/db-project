@@ -29,3 +29,6 @@ select * from TESTERS;
 select NAMES from developers
 minus
 select NAMES from TESTERS;
+
+
+--difference between them interview question
