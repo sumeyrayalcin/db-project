@@ -21,3 +21,13 @@ shows the common datas of two tables
 select NAMES from DEVELOPERS
 intersect
 select names from TESTERS;
+
+
+/*
+ how to find duplicate names in employees table
+ */
+
+select FIRST_NAME , COUNT(*)
+from EMPLOYEES
+group by FIRST_NAME
+having count(*)>1;
