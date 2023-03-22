@@ -22,8 +22,11 @@ from CUSTOMER right outer join  ADDRESS
                               on CUSTOMER.ADDRESS_ID = ADDRESS.ADDRESS_ID
 where CUSTOMER.ADDRESS_ID IS NULL;
 
+
+
+
 --dilek
-select CUSTOMER_ID,FIRST_NAME,LAST_NAME,CUSTOMER.ADDRESS_ID,ADDRESS,PHONE
+select CUSTOMER_ID,FIRST_NAME,LAST_NAME,CUSTOMER.ADDRESS_ID,ADDRESS.ADDRESS_ID ADDRESS,PHONE
 from CUSTOMER left outer join  address
                                on CUSTOMER.ADDRESS_ID=ADDRESS.address_ID
 where CUSTOMER.address_id is null;
